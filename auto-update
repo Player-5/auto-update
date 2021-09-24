@@ -1,0 +1,16 @@
+#!/bin/bash
+
+function update
+{
+  apt-get update &&
+  apt-get dist-upgrade -Vy &&
+  apt-get autoremove -y &&
+  apt-get autoclean &&
+  apt-get clean
+
+  if [ $1 = "-r" ]; then
+    shutdown -r now
+  fi
+}
+
+update $1
