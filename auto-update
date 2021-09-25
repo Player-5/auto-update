@@ -1,6 +1,7 @@
 #!/bin/bash
 
-function help {
+function help
+{
   echo "auto-update help page"
   echo "-r"
   echo "Will restart the computer after update is done."
