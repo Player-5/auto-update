@@ -1,5 +1,14 @@
 #!/bin/bash
 
+function help {
+  echo "auto-update help page"
+  echo "-r"
+  echo "Will restart the computer after update is done."
+  echo "-s"
+  echo "Will shutdown the computer after update is done."
+  echo "\nand thanks"
+}
+
 function update
 {
   apt-get update &&
@@ -15,4 +24,8 @@ function update
   fi
 }
 
-update $1
+if [ '$1' = '-h' ]; then
+  help
+else
+  update $1
+fi
