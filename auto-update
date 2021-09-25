@@ -8,9 +8,9 @@ function update
   apt-get autoclean &&
   apt-get clean
 
-  if [ $1 = '-r' ]; then
+  if [ '$1' = '-r' ]; then
     shutdown -r now
-  elif [ $1 = '-e' ]; then
+  elif [ '$1' = '-e' ]; then
     exit
   fi
 }
