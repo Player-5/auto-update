@@ -4,10 +4,9 @@ function help
 {
   echo "auto-update help page"
   echo "-r"
-  echo "Will restart the computer after update is done."
+  echo "  Will restart the computer after update is done."
   echo "-s"
-  echo "Will shutdown the computer after update is done."
-  echo "and thanks"
+  echo "  Will shutdown the computer after update is done."
 }
 
 function update
