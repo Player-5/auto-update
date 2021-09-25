@@ -10,8 +10,8 @@ function update
 
   if [ '$1' = '-r' ]; then
     shutdown -r now
-  elif [ '$1' = '-e' ]; then
-    exit
+  elif [ '$1' = '-s' ]; then
+    shutdown now
   fi
 }
 
