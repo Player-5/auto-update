@@ -7,7 +7,7 @@ function help
   echo "Will restart the computer after update is done."
   echo "-s"
   echo "Will shutdown the computer after update is done."
-  echo "\nand thanks"
+  echo "and thanks"
 }
 
 function update
@@ -18,14 +18,14 @@ function update
   apt-get autoclean &&
   apt-get clean
 
-  if [ '$1' = '-r' ]; then
+  if [ "$1" = '-r' ]; then
     shutdown -r now
-  elif [ '$1' = '-s' ]; then
+  elif [ "$1" = '-s' ]; then
     shutdown now
   fi
 }
 
-if [ '$1' = '-h' ]; then
+if [ "$1" = '-h' ]; then
   help
 else
   update $1
