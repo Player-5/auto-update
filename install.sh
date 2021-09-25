@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#    Main bash script of the program    
+#    A simple installation script for auto-update    
 #    Copyright (C) 2021  Player-5
 
 #    This program is free software: you can redistribute it and/or modify
