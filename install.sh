@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#    A simple installation script for auto-update    
+#    A simple installation script for auto-update
 #    Copyright (C) 2021  Player-5
 
 #    This program is free software: you can redistribute it and/or modify
@@ -16,7 +16,9 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+# Defines default variables.
 func="auto-update"
 dest="/usr/local/bin"
 
+# Moves auto-update to the destination.
 cp $func $dest
