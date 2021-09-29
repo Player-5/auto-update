@@ -17,8 +17,8 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # Defines default variables.
-func="auto-update"
-dest="/usr/local/bin"
+func='auto-update'
+dest='/usr/local/bin'
 
 # Moves auto-update to the destination.
 cp $func $dest
