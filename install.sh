@@ -16,6 +16,12 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+# Checks whether the user has the permissions needed to install the script.
+if [[ "$(whoami)" != root ]]; then
+  echo 'User not sudo/root!'
+  exit 1
+fi
+
 # Defines default variables.
 func="auto-update"
 dest="/usr/local/bin"

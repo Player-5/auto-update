@@ -29,6 +29,13 @@ function help
 
 function update
 {
+
+  # Checks if the user can run the update commands, otherwise exits the program.
+  if [[ "$(whoami)" != root ]]; then
+    echo 'User not sudo/root!'
+    exit 1
+  fi
+
   # Runs commands needed to fully update the system.
   apt-get update &&
   apt-get dist-upgrade -Vy &&
