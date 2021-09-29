@@ -20,11 +20,11 @@
 function help
 {
   # Outputs commands and help info to the user.
-  echo "auto-update help page"
-  echo "-r"
-  echo "  Will restart the computer after update is done."
-  echo "-s"
-  echo "  Will shutdown the computer after update is done."
+  echo 'auto-update help page'
+  echo '-r'
+  echo '  Will restart the computer after update is done.'
+  echo '-s'
+  echo '  Will shutdown the computer after update is done.'
 }
 
 function update

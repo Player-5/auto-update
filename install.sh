@@ -23,8 +23,8 @@ if [[ "$(whoami)" != root ]]; then
 fi
 
 # Defines default variables.
-func="auto-update"
-dest="/usr/local/bin"
+func='auto-update'
+dest='/usr/local/bin'
 
 # Moves auto-update to the destination.
 cp $func $dest
