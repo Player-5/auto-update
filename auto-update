@@ -16,7 +16,6 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-
 function help
 {
   # Outputs commands and help info to the user.
@@ -45,15 +44,15 @@ function update
 
   # Determines whether to shutdown or restart the system,
   # if no args are given the script will simply finish.
-  if [ "$1" = '-r' ]; then
+  if [[ "$1" = '-r' ]]; then
     shutdown -r now
-  elif [ "$1" = '-s' ]; then
+  elif [[ "$1" = '-s' ]]; then
     shutdown now
   fi
 }
 
 # Determines whether to ouput help text, or run script.
-if [ "$1" = '-h' ]; then
+if [[ "$1" = '-h' ]]; then
   help
 else
   update $1
