@@ -3,9 +3,9 @@ A small bash script that handles updating on systems that use the apt
 package manager.
 
 # Installation
-Simply download the repositroy and run the installation script.
+Simply download the repository and run the installation script.
 
-# Use
+# Usage
 To use the program just type "sudo auto-update" into your shell of choice.
 
 ```bash
