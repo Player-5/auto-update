@@ -28,7 +28,6 @@ function help
 
 function update
 {
-
   # Checks if the user can run the update commands, otherwise exits the program.
   if [[ "$(whoami)" != root ]]; then
     echo 'User not sudo/root!'
